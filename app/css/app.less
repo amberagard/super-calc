@@ -7,10 +7,9 @@
     text-align: center;
     background-color: #69BFA7;
     box-shadow: 1px 1px 1px #000000;
-
 }
 
-.number:active {
+.number:active, .decimal:active, .sign:active {
     background-color: #3F7668;
 }
 
@@ -35,21 +34,40 @@ table {
 }
 
 .operator {
-    //border: 2px solid #00733C;
     color: #F28F38;
     background-color: #F2DDB6;
 }
 
+.operator:active {
+    background-color: #C8B697;
+}
+
+.x:active {
+    background-color: #9D5B21;
+}
+
+#push:active, #clear-box:active {
+    background-color: #9D5B21;
+}
+
 h1 {
-    font-family: 'Helvetica' sans-serif;
+    font-family: 'Allerta', sans-serif;
 }
 
 body {
     margin-left: 20px;
 }
 
-#clear-box, #push {
+#clear-box, #push, .x {
     background-color: #F28F38;
     color: #F2DDB6;
+    font-family: 'Helvetica' sans-serif;
+}
 
+#queue {
+    color: #69BFA7;
+    background-color: #F2DDB6;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Allerta', sans-serif;
 }
